@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <ul class="nav navbar-nav">
+        <li> <%= link_to "Playlist Home", my_music_playlist_path %> </li>
+        <% if !user_signed_in? %>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+          <li><%= link_to "Sign up", new_user_registration_path %></li>
+        <% else %>
+          <li><%= link_to "Sign out", destroy_user_session_path, method: "delete" %></li>
+        <% end %>
+    </ul>
+
+    <% if user_signed_in? %>
+     <p class="navbar-text navbar-right" style ="margin-right: 15px;">Signed in as <%= link_to current_user.email, edit_user_registration_path %> </b></p>
+     <% end %>
+</nav>
