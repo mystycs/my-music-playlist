@@ -1,0 +1,2 @@
+module MyMusicPlaylistHelper
+end
