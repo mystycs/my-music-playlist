@@ -1,1 +1,6 @@
-Hello!
+<h2>  </h2>
+<ul>
+  <% @playlists.each do |p| %>
+    <li><%= link_to p.title, playlist_path(p.id)  %></li>
+  <% end %>
+</ul>
