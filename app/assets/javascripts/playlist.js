@@ -14,14 +14,11 @@ var documentready = function() {
           success: function(response) {
             $('#showSongs').empty()
              $.each(response, function(i, items){
-               $.each(items, function(j, album){
-              //  content = '<iframe src='
-              //  content += "https://embed.spotify.com/?uri=" + JSON.stringify(song.items[0].uri).replace(/(^"|"$)/g, '')
-              //  content += "></iframe>"
-              //  $.each(album, function(k, song){
-              $('#showSongs').append(JSON.stringify(album))
-// })
-})
+               $.each(items.items, function(j, artists){
+               content = '<iframe src='
+               content += 'https://embed.spotify.com/?uri=' + JSON.stringify(artists.uri).replace(/(^"|"$)/g, '') +' width="250" height="300" frameborder="0" allowtransparency="true"></iframe>'
+              $('#showSongs').append(content)
+              })
              })
           },
           error: function() {
