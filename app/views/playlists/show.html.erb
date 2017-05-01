@@ -1,7 +1,14 @@
 <h2> <%= @playlist.title %></h2>
 
+<ul>
+  <% @songs.each do |s| %>
+    <li><iframe src="https://embed.spotify.com/?uri=spotify:track:<%= s.uri  %>" width="250" height="300" frameborder="0" allowtransparency="true"></iframe></li>
+  <% end %>
+</ul>
+
+
 <h3> Search a Song </h3>
 
 <input type="text" id="searchSong" name="searchSong">
-<br>
+<br><br>
 <div id="showSongs"></div>

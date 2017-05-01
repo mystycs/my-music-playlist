@@ -8,6 +8,7 @@ class PlaylistsController < ApplicationController
 
   def show
     @playlist = Playlist.find(params[:id])
+    @songs = Song.where(:playlist_id => params[:id])
   end
 
   def index
