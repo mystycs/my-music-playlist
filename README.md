@@ -1,24 +1,36 @@
-# README
+# My-Music-Playlist
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A music playlist written in Ruby 
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+   ```
+   $ git@github.com:mystycs/my-music-playlist.git
+   $ cd my-music-playlist
+   ```
 
-* System dependencies
+## Usage
 
-* Configuration
+Enter the following commands below
 
-* Database creation
+   ```
+   $ bundle install
+   $ rake db:migrate
+   ```
 
-* Database initialization
+Next, type the command below and launch the server localhost:3000
 
-* How to run the test suite
+   ```
+   $ rails s
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+After opening localhost:3000 in your browser, you can use this app!!
 
-* Deployment instructions
 
-* ...
+## Contributing
+
+All and any kinds of contributions are always welcome!
+
+## License
+
+MIT. See [LICENSE.md](https://github.com/mystycs/my-music-playlist/blob/master/LICENSE) for details.
