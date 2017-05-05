@@ -1,6 +1,6 @@
 # My-Music-Playlist
 
-A music playlist written in Ruby 
+A music playlist written in Ruby with jQuery
 
 ## Installation
 
